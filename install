@@ -27,7 +27,7 @@ cd
 echo
 echo -e "\033[1;93m[*] Now You Can Run This Program By Just typing \033[1;91m't-edit'."
 sleep 1
-echo -e "\033[1;93m[!] Opening...\033[0m"
 echo
+echo -e "\033[1;93m[!] Opening...\033[0m"
 sleep 1
 t-edit
