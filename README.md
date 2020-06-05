@@ -5,6 +5,7 @@
 #
 ### • Quick Installation:
 
-```apt update && apt update -y && 
+```
+apt update && apt update -y && 
 git clone https://github.com/abhackerofficial/T-Edit && 
 cd T-Edit && chmod +x install && ./install
