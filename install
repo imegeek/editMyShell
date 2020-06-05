@@ -1,0 +1,31 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo
+echo -e "\033[1;91m[*] Installing termux-style..."
+sleep 2
+echo
+echo -e "\033[1;92m[*] Setting Up The Program..."
+sleep 2
+echo
+
+if [ ! -d $HOME/.termux ]; then
+mkdir $HOME/.termux
+fi
+
+echo -e "\033[1;92m[*] Extracting Files..."
+sleep 2
+unzip t-edit.zip > /dev/null 2>&1 && rm -rf t-edit.zip > /dev/null 2>&1
+chmod +x t-edit
+cp t-edit $PREFIX/bin
+cp -rf t-edits $HOME/.termux
+
+echo
+echo -e "\033[1;92m[*] Setup Completed."
+sleep 1
+cd .. && rm -rf T-Edit
+cd
+echo
+echo -e "\033[1;93m[*] Now You Can Run This Program By Just typing \033[1;91m't-edit'."
+sleep 2
+echo -e "\033[1;93m[!] Opening...\033[0m"
+t-edit
