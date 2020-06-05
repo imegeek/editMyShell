@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo
-echo -e "\033[1;91m[*] Installing termux-style..."
+echo -e "\033[1;91m[*] Installing T-Edit..."
 sleep 2
 echo
 echo -e "\033[1;92m[*] Setting Up The Program..."
@@ -28,5 +28,6 @@ echo
 echo -e "\033[1;93m[*] Now You Can Run This Program By Just typing \033[1;91m't-edit'."
 sleep 1
 echo -e "\033[1;93m[!] Opening...\033[0m"
+echo
 sleep 1
 t-edit
