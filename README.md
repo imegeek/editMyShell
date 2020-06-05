@@ -7,4 +7,4 @@
 
 ```apt update && apt update -y && 
 git clone https://github.com/abhackerofficial/T-Edit && 
-cd T-Edit && chmod +x install && ./install```<br/>
+cd T-Edit && chmod +x install && ./install```
