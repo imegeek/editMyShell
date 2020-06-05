@@ -2,6 +2,7 @@
 
 echo
 echo -e "\033[1;91m[*] Installing T-Edit..."
+command -v nano > /dev/null 2>&1 || apt --assume-yes install nano > /dev/null 2>&1
 sleep 2
 echo
 echo -e "\033[1;92m[*] Setting Up The Program..."
@@ -14,7 +15,7 @@ fi
 
 echo -e "\033[1;92m[*] Extracting Files..."
 sleep 2
-unzip t-edit.zip > /dev/null 2>&1 && rm -rf t-edit.zip > /dev/null 2>&1
+unzip setup.zip > /dev/null 2>&1 && rm -rf setup.zip > /dev/null 2>&1
 chmod +x t-edit
 cp t-edit $PREFIX/bin
 cp -rf t-edits $HOME/.termux
@@ -28,6 +29,6 @@ echo
 echo -e "\033[1;93m[*] Now You Can Run This Program By Just typing \033[1;91m't-edit'."
 sleep 1
 echo
-echo -e "\033[1;93m[!] Opening...\033[0m"
+echo -e "\033[1;93m[!] T-Edit Opening...\033[0m"
 sleep 1
 t-edit
